@@ -1,0 +1,36 @@
+
+    header{
+        background-color:$bkg-color;
+        padding: 15px;
+
+        h5{
+            float: left;
+            text-transform: uppercase;
+            color: white;
+            font-size: 30px;
+        }
+
+     
+            h4 {
+                border: 2px solid white;
+                width: 200px;
+                padding: 15px;
+                border-radius: 10px;
+                float: right;
+                font-size: 20px;
+                text-align: center;
+                background-color: $header-color;
+                color: white;
+
+            
+        }
+    }
+
+
+@media (max-width: 768px){
+    header{
+        h4{
+            float: left;
+        }
+    }
+}

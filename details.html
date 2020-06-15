@@ -1,0 +1,112 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h5>Interviews Reports</h5>
+        <a href="index.html"><h4>Candidates</h4></a>
+      </div>
+    </header>
+    <!-- Headre End -->
+
+<!-- About candidates -->
+    <main class="main-details">
+      <div class="container">
+      
+        <div class="row" id="candidat">
+        <!-- Template candidate -->
+          <script id="template" type="template">
+            <div class="col-xs-12 col-sm-12 col-md-4">
+            <div class="image">
+              <img
+                src="{{image}}"
+                alt=""
+                class="img-responsive"/>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+              <div class="details">
+                <h3>Name:</h3>
+
+                <p>{{name}}</p>
+
+                <h3>Email:</h3>
+
+                <p>{{email}}</p>
+              </div>
+            </div>
+              <!-- date of birth -->
+              <div class="col-xs-12 col-sm-6 col-md-5">
+              <div class="education">
+                <h3>Date of birth:</h3>
+
+                <p>{{dateOfBirth}}</p>
+
+                <h3>Education:</h3>
+
+                <p>{{education}}</p>
+              </div>
+            </div>
+              <!-- date of birth End-->
+            </div>
+          </script>
+        </div>
+      </div>
+
+      <!-- Table -->
+      <section>
+        <table id="table">
+          <tr class="table-header">
+            <td>Company</td>
+            <td>Interviews</td>
+            <td colspan="2">Status</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Table End -->
+
+      <!-- Modal -->
+   
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+      
+            <div class="modal-body">
+             <!-- placeholder -->
+            </div>
+            <div class="modal-footer">
+
+            </div>
+          </div>
+        </div>
+      </div>
+ 
+      <!-- Modal END -->
+   
+    </main>
+
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/report.js"></script>
+
+  </body>
+</html>

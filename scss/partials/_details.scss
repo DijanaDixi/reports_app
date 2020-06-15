@@ -1,0 +1,208 @@
+.main-details {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .container {
+        margin: 0 auto;
+
+        .image {
+            display: inline-block;
+            border: 2px solid #fff;
+
+            box-shadow: 10px 10px 5px #ccc;
+            -moz-box-shadow: 10px 10px 5px #ccc;
+            -webkit-box-shadow: 10px 10px 5px #ccc;
+            -khtml-box-shadow: 10px 10px 5px #ccc;
+
+
+            width: 100%;
+        }
+
+    }
+
+    .details {
+        display: inline-block;
+
+        vertical-align: top;
+        padding: 10px;
+        color: #5d535e;
+    }
+
+    .education {
+        display: inline-block;
+        margin-left: 30px;
+        vertical-align: top;
+        padding: 10px;
+        color: #5d535e;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-left: 10px;
+        font-weight: 600;
+    }
+
+    #table {
+        border: 1px solid black;
+        font-family: arial, sans-serif;
+        width: 100%;
+        padding: 50px;
+
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+
+        }
+
+        td:last-child {
+            width: 20px;
+
+            th {
+                border: 1px solid black;
+                padding: 30px;
+            }
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        img {
+            width: 30px;
+            display: inline-block;
+            width: 30px;
+
+
+        }
+
+.table-header{
+    background-color: $header-color;
+}
+    }
+
+    section {
+        margin-top: 50px;
+    }
+
+    .modal {
+        color: transparentize($color: #000000, $amount: 0);
+
+        .modal-dialog {
+            max-width: 742px;
+
+            .modal-content {
+
+                .modal-body {
+                    .modal-title {
+                        font-size: 25px;
+                        color: black;
+                        margin-left: -10px;
+                    }
+
+                    h4 {
+                        color: grey;
+
+                    }
+
+                    p {
+                        margin-left: 0px;
+                    }
+
+                    .modal-data {
+                        margin-top: 20px;
+
+                        display: inline-block;
+                        width: 40%;
+                        vertical-align: top;
+
+
+
+                        p {
+                            font-size: 25px;
+                            vertical-align: top;
+                            padding-bottom: 10px;
+                        }
+
+                    }
+
+                    .modal-about {
+                        margin-top: 50px;
+                        display: inline-block;
+                        width: 45%;
+
+                        p {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .close {
+            background-color: rgb(88, 85, 85);
+            border-radius: 50%;
+            color: white;
+
+
+        }
+    }
+
+}
+
+
+@media(min-width:400px) {
+    .main-details {
+        .container {
+            img {
+                width: 100%;
+            }
+        }
+
+
+        .details {
+            display: inline-block;
+            vertical-align: top;
+            padding: 10px;
+            color: #5d535e;
+        }
+
+        .education {
+            margin-left: 0px;
+        }
+    }
+}
+
+
+@media(min-width:600px) {
+    .main-details {
+        .container {
+
+            .education {
+                margin-left: 30px;
+            }
+
+
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .main-details {
+        .container {
+
+            .education {
+                margin-left: 100px;
+            }
+
+            p {
+                margin-left: 0;
+            }
+
+        }
+    }
+}
